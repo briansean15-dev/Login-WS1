@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c2c2c2;
+    padding: 24px 0;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 420px;
+    padding: 32px 28px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.input-container h1 {
+    font-size: 22px;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-container label {
+    font-size: 13px;
+    color: #4a4a4a;
+    margin-bottom: 6px;
+}
+
+.input-container input[type="text"],
+.input-container input[type="email"],
+.input-container input[type="password"],
+.input-container select {
+    padding: 10px 12px;
+    margin-bottom: 16px;
+    border: 1px solid #b3b3b3;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 14px;
+    outline: none;
+}
+
+.input-container input[type="text"]:focus,
+.input-container input[type="email"]:focus,
+.input-container input[type="password"]:focus,
+.input-container select:focus {
+    border-color: #808080;
+    background-color: #ffffff;
+}
+
+#forgot-password {
+    align-self: center;
+    background: none;
+    border: none;
+    color: #555555;
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+#forgot-password:hover {
+    color: #222222;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.remember-me input {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+#login,
+#register,
+#reset-password {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #25a244;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 16px;
+    transition: background-color 0.2s ease;
+}
+
+#login:hover,
+#register:hover,
+#reset-password:hover {
+    background-color: #2ab34c;
+}
+
+.account-link {
+    text-align: center;
+    font-size: 13px;
+    color: #4a4a4a;
+    margin-bottom: 8px;
+}
+
+.account-link:last-child {
+    margin-bottom: 0;
+}
+
+.input-container a {
+    color: #202020;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.input-container a:hover {
+    color: #141414;
+}
+
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+    outline: 2px solid #808080;
+    outline-offset: 2px;
+}
+
+.error-banner {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.success-banner {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.demo-accounts {
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid #dedede;
+}
+
+.demo-accounts h2 {
+    margin-bottom: 4px;
+    color: #333333;
+    font-size: 16px;
+}
+
+.demo-accounts-intro {
+    margin-bottom: 12px;
+    color: #666666;
+    font-size: 12px;
+}
+
+.demo-account {
+    margin-top: 8px;
+    padding: 10px 12px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.demo-account-heading,
+.demo-account p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.demo-account-heading {
+    margin-bottom: 7px;
+    color: #333333;
+    font-size: 13px;
+}
+
+.demo-account p {
+    margin-top: 4px;
+    color: #555555;
+    font-size: 12px;
+}
+
+.demo-account code {
+    color: #333333;
+    font-size: 12px;
+}
+
+.demo-use-button {
+    padding: 5px 8px;
+    border: 1px solid #b7b7b7;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.demo-use-button:hover {
+    background-color: #eeeeee;
+}
